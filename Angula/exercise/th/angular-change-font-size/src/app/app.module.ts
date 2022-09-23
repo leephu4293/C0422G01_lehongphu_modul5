@@ -9,6 +9,10 @@ import {FormsModule} from "@angular/forms";
 import { ProductComponent } from './product/product.component';
 import { CaculatorComponent } from './caculator/caculator.component';
 import { ColorComponent } from './color/color.component';
+import { ArticleComponent } from './article/article.component';
+import { LikeComponent } from './like/like.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { ColorComponent } from './color/color.component';
     PetComponent,
     ProductComponent,
     CaculatorComponent,
-    ColorComponent
+    ColorComponent,
+    ArticleComponent,
+    LikeComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
