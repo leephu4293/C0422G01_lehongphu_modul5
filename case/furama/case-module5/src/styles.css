@@ -1,0 +1,27 @@
+#testNav {
+  background: linear-gradient(to right, #047E56, #038A51);
+  padding: 20px;
+
+}
+
+.img{
+  overflow: hidden;
+}
+
+.img_card:hover{
+  transform: scale(1.5);
+}
+
+
+.detail_card:hover{
+  padding: 10px 15px;
+}
+
+body{
+  font-family: Arial Sans-serif;
+  background-image: url("src/assets/BG2.jpg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
