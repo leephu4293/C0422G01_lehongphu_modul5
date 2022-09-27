@@ -75,8 +75,8 @@
       <div class="row">
         <div class="col-lg-8">
           <div class="row">
-            <div class="col-lg-12" style="margin-top: 2px">
-              <video autoplay muted class="ratio-16x9 w-100" style="margin-top: 13px">
+            <div class="col-lg-12" style="margin-top: 2px" id="video">
+              <video autoplay loop oncanplay="this.play()" onloadedmetadata="this.muted = true" class="ratio-16x9 w-100" style="margin-top: 13px">
                 <source src="../assets/Scuba%20Diving%20-%20699.mp4">
               </video>
             </div>

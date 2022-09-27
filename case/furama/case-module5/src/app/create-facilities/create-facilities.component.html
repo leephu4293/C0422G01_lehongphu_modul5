@@ -1,0 +1,95 @@
+<div class="row container-fluid mt-5" style="display: flex;justify-content: center;">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6 mb-4 mt-4 " >
+    <form style="box-shadow: 2px 2px 5px #EDDAF2;background: linear-gradient(to right, #D9F5D7, #EAF5D7);
+          border-radius: 10px">
+      <h5 class="text-center p-2">DANG KY DICH VU </h5>
+      <div class="css">
+        <label>  Service </label>
+        <select  (change)="getService(checkId.value)"   #checkId  class="form-control rounded-3" >
+          <option value="1">Villa</option>
+          <option value="2">House</option>
+          <option value="3">Room</option>
+
+        </select>
+      </div>
+
+      <div  class="css">
+        <label>Name Service</label>
+        <input type="text" class="form-control rounded-3 " name="name" placeholder="Name Service"  >
+        <div class="text-danger mt-2" ></div>
+
+      </div>
+
+      <div  class="css">
+        <label>Use Area</label>
+        <input type="number" class="form-control rounded-3"  name="area" placeholder="Use Area" >
+        <div class="text-danger mt-2" ></div>
+
+      </div>
+
+      <div  class="css">
+        <label>Cost</label>
+        <input type="number" class="form-control rounded-3" name="cost"  placeholder="Cost"  >
+        <div class="text-danger mt-2" ></div>
+
+      </div>
+
+      <div  class="css">
+        <label>Max People</label>
+        <input type="number"  value=0 class="form-control rounded-3"  name="people" placeholder=" Max People" >
+        <div class="text-danger mt-2" ></div>
+      </div>
+
+      <div  class="css" >
+        <label> Rent Code</label>
+        <select name="rent" class="form-control rounded-3">
+          <option>month</option>
+          <option>year</option>
+          <option>day</option>
+        </select>
+      </div>
+
+      <div  class="css"  id = "div1" [style.display]="input1"   >
+        <label>Room Standard</label>
+        <input type="text"  id = "s1"   class="form-control rounded-3" name="Room Standard"
+               placeholder="Tieu chuan Phong" >
+      </div>
+
+      <div  class="css" id = "div2" [style.display]="input2"  >
+        <label>Other Facilities</label>
+        <input type="text"  id="s2" class="form-control rounded-3" name="anyelse"
+               placeholder="Other Facilities">
+      </div>
+
+      <div  class="css"  id = "div3" [style.display]="input3"   >
+        <label>Pool Area</label>
+        <input type="number"  id="s3"  value="0" class="form-control rounded-3" name="Pool Area"
+               placeholder="Dien Tich Ho Boi">
+        <div class="text-danger mt-2"></div>
+
+      </div>
+
+      <div  class="css" id = "div4" [style.display]="input4"  >
+        <label>Floods</label>
+        <input type="number"  id="s4"  value=0 class="form-control rounded-3" name="Floods"
+               placeholder="So Tang">
+        <div class="text-danger mt-2"></div>
+
+      </div>
+
+      <div  class="css" id = "div5" [style.display]="input5"  >
+        <label>Free Service</label>
+        <input type="text" [value]="inputs5"   class="form-control rounded-3" name="Free Service"
+               placeholder="So Tang">
+      </div>
+      <p></p>
+      <div style="height: 60px" class="row">
+        <div class="col-lg-12 text-center">
+          <button type="submit" class="btn btn-success detail_card">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-lg-3 "></div>
+</div>

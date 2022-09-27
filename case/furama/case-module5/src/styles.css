@@ -12,10 +12,11 @@
   transform: scale(1.5);
 }
 
-
 .detail_card:hover{
   padding: 10px 15px;
 }
+
+
 
 body{
   font-family: Arial Sans-serif;
@@ -24,4 +25,10 @@ body{
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
+}
+.css{
+  margin:0 120px;
+  border-radius: 10px;
+  padding: 5px;
+
 }
