@@ -9,7 +9,7 @@
        <th>Title</th>
        <th>Delete</th>
      </tr>
-    <tr *ngFor="let art of articles; let i = index;">
+    <tr *ngFor="let art of articles; index as i ;">
       <td>{{i+1}}</td>
       <td><a href="{{art.url}}">{{art.title}}</a>:<app-like></app-like></td>
       <td><button (click)="deleteArc(i)" class="btn btn-danger">Delete</button></td>

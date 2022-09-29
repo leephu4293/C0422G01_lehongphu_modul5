@@ -1,0 +1,87 @@
+<div class="row container-fluid">
+  <div class="col-2"></div>
+  <div class="col-8 mb-4 mt-4 " >
+    <form style="box-shadow: 2px 2px 5px #EDDAF2;background: linear-gradient(to right, #D9F5D7, #EAF5D7);
+          border-radius: 10px; padding: 0 80px" [formGroup]="createForm" (ngSubmit)="onSubmit()" >
+      <h5 class="text-center p-2">DANG KY DICH VU </h5>
+      <div  class="css">
+        <label>Email</label>
+        <input type="text" class="form-control rounded-3 " name="name" formControlName="email" placeholder="Email"  >
+        <div class="text-danger mt-2" ></div>
+      </div>
+      <div *ngIf="!emailValid.valid && (emailValid.dirty || emailValid.touched)">
+        <div [hidden]="!emailValid.errors.required">
+          <p style="color:red">need required </p>
+        </div>
+      </div>
+      <div *ngIf="!emailValid.valid && (emailValid.dirty || emailValid.touched)">
+        <div [hidden]="!emailValid.errors.email">
+          <p style="color:red">need input correct patten </p>
+        </div>
+      </div>
+      <div formGroupName="checkPass">
+      <div class="css">
+        <label>Password</label>
+        <input type="number" class="form-control rounded-3" formControlName="password" name="area" placeholder="Password" >
+        <div class="text-danger mt-2" ></div>
+      </div>
+      <div  class="css">
+        <label>ConfirmPassword</label>
+        <input type="number" class="form-control rounded-3" name="cost" formControlName="confirmPassword" placeholder="ConfirmPassword"  >
+        <div class="text-danger mt-2" ></div>
+      </div>
+      </div>
+      <div *ngIf="createForm.controls.checkPass.hasError('invalid')">
+           <p class="text-danger"> pass not match</p>
+      </div>
+      <div *ngIf="createForm.controls.checkPass.get('password').hasError('required')&& createForm.controls.checkPass.touched">
+        <p class="text-danger"> pass not match</p>
+      </div>
+      <div  class="css">
+        <label>Country</label>
+        <select class="form-control rounded-3"  formControlName='country'>
+          <option *ngFor="let con of country"  value="{{con.name}}">{{con.name}}</option>
+        </select>
+        <div class="text-danger mt-2" ></div>
+      </div>
+
+      <div  class="css"  id = "div1">
+        <label>Age</label>
+        <input type="text" id = "s1" formControlName="age" class="form-control rounded-3" name="Age"
+               placeholder="Age">
+      </div>
+
+
+      <div  class="css mt-2 mb-2">
+        <label>Gender</label>
+        <input type="radio" class="form-check-input" style="margin-left: 10px" formControlName="gender" name="gender"id="radio1" value="true">
+        <label for="radio1">Male</label>
+        <input type="radio" class="form-check-input" style="margin-left: 10px" formControlName="gender" name="gender" id="radio2" value="false">
+        <label for="radio2">FeMale</label>
+      </div>
+
+      <div  class="css">
+        <label>Phone</label>
+        <input type="text"  id="s2" class="form-control rounded-3"  formControlName="phone"
+               placeholder="Phone">
+      </div>
+      <div *ngIf="!createForm.controls.phone?.valid && (createForm.controls.phone?.dirty || createForm.controls.phone?.touched)">
+         <div [hidden]="!createForm.controls.phone?.hasError('required')">
+           <p class="text-danger">must not empty</p>
+         </div>
+        <div [hidden]="!createForm.controls.phone?.errors.pattern">
+          <p class="text-danger">must not correct 84 ....<p>
+        </div>
+
+      </div>
+      <p></p>
+      <div style="height: 60px" class="row">
+        <div class="col-lg-12 text-center">
+          <button type="submit" [disabled]="!createForm.valid"  class="btn btn-success detail_card">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-2"></div>
+</div>
+

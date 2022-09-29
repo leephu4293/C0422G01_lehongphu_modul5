@@ -7,7 +7,8 @@ import {Article} from "./article";
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent implements OnInit {
-  article: Article = {};
+  article: Article = {
+  };
   articles: Article[] = [
     {
       title: 'The Evolution of Async JavaScript: From Callbacks, to Promises, to Async/Await',
@@ -39,6 +40,7 @@ export class ArticleComponent implements OnInit {
 
   addNewArticle() {
     this.articles.push(this.article);
+    this.article = {};
   }
 
   deleteArc(id:any) {
