@@ -1,0 +1,34 @@
+ <div class="row">
+   <div class="col-2">
+      <a routerLink="/add" class="btn btn-success">Create</a>
+   </div>
+   <div class="col-8">
+      <h5 class="text-center">LIST PRODUCT</h5>
+      <table class="table table-hover">
+         <thead>
+         <tr>
+            <th>STT</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>More Details</th>
+            <th>Product Details</th>
+            <th>Delete</th>
+            <th>Update</th>
+         </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let product of list index as i">
+               <td>{{i+1}}</td>
+               <td>{{product.name}}</td>
+               <td>{{product.price}}</td>
+               <td>{{product.note}}</td>
+               <td><a [routerLink]="['/details',product.id]">Product Details</a></td>
+               <td><a [routerLink]="['/deleteProduct',product.id]">Product Delete</a></td>
+               <td><a [routerLink]="['/UpdateProduct',product.id]">Product Update</a></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <div class="col-2"></div>
+ </div>
+

@@ -1,0 +1,29 @@
+<div class="row container-fluid">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <h5 class="text-center"> Create From </h5>
+          <form [formGroup]="createForm" (ngSubmit)="onSubmit()" >
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">ID</label>
+              <input type="text" class="form-control" formControlName="id" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Name</label>
+              <input type="text" class="form-control" formControlName="name" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword2" class="form-label">Price</label>
+              <input type="text" class="form-control"  formControlName="price" id="exampleInputPassword2">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword3" class="form-label">Note</label>
+              <input type="text" class="form-control" formControlName="note" id="exampleInputPassword3">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+    <div class="col-2"></div>
+  </div>
+
+
+
