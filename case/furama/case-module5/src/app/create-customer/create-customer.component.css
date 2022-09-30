@@ -35,13 +35,17 @@
   color: #868686;
   position: absolute;
   pointer-events: none;
-  left: 3px;
+  left: 0;
   top: 16px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
 }
 
 input:focus,
-textarea:focus {
+textarea  :focus {
   outline: none;
+
 }
 
 .form-detail .bar {
@@ -81,6 +85,7 @@ textarea:focus {
 .form-button {
   margin-top: 20px;
 }
+
 
 
 
