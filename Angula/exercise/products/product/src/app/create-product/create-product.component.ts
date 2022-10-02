@@ -23,8 +23,9 @@ export class CreateProductComponent implements OnInit {
   }
 
   onSubmit() {
+    this.createProduct.createProducts(this.createForm.value).subscribe(next=>{
+      this.router.navigateByUrl('');
+    });
 
-    this.createProduct.createProducts(this.createForm.value);
-    this.router.navigateByUrl('');
   }
 }

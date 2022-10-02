@@ -1,15 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CreateProductComponent } from './create-product/create-product.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { ListProductComponent } from './list-product/list-product.component';
 import { DeleteProductComponent } from './delete-product/delete-product.component';
-import {ProductService} from "./service/product.service";
 import {ReactiveFormsModule} from "@angular/forms";
 import { DetailsProductComponent } from './details-product/details-product.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -23,7 +22,8 @@ import { DetailsProductComponent } from './details-product/details-product.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -16,11 +16,14 @@ export class UpdateProductComponent implements OnInit {
     price:new FormControl(),
     note:new FormControl(),
   })
+
   productUpdate : Iproduct;
   constructor(private productUp :ProductService,private check : ActivatedRoute,private router :Router) {
     this.check.paramMap.subscribe((param:ParamMap)=>{
       const id = param.get('id');
-      this.productUpdate =  this.productUp.findProductById(id);
+        this.productUp.findProductById(id).subscribe(data=>{
+          this.productUpdate= data;
+        });
     })
   }
 
@@ -28,8 +31,11 @@ export class UpdateProductComponent implements OnInit {
   }
 
   onUpdateSubmit() {
-     this.productUp.updateProduct(this.updateForm.value)
-     this.router.navigateByUrl('')
+    console.log(this.updateForm.value)
+     this.productUp.updateProduct(this.updateForm.value).subscribe(next=>{
+       this.router.navigateByUrl('')
+     })
+
 
   }
 }

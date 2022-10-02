@@ -1,48 +1,35 @@
 import { Injectable } from '@angular/core';
 import {Iproduct} from "../../interface/iproduct";
+import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-   listProduct : Iproduct[]=[
-     {id:1,name:'coca',price:5000,note:'no sugar'},
-     {id:2,name:'pepsi',price:8000,note:'full sugar'},
-     {id:3,name:'red bull',price:2000,note:'classic'},
-     {id:4,name:'sting',price:9000,note:'red'},
-     {id:5,name:'beer',price:5500,note:'huda'},
-     {id:'dasd',name:'beer',price:5500,note:'huda'},
-   ]
 
-  constructor() {}
+  constructor(private  httpClient : HttpClient) {
+
+  }
+
 
   getList(){
-     return this.listProduct;
+     return this.httpClient.get<any>("http://localhost:3000/product");
   }
   createProducts(newProduct : Iproduct){
-     this.listProduct.push(newProduct)
+    return  this.httpClient.post<Iproduct>("http://localhost:3000/product",newProduct);
   }
 
   findProductById(id: string){
-    console.log(typeof id)
-    console.log(typeof this.listProduct[this.listProduct.length - 1].id)
-   return  this.listProduct.find(product => product.id == parseInt(id))
-
+   return  this.httpClient.get("http://localhost:3000/product/"+ id);
   }
 
   RemoveProductById(id: string) {
-    for (let i=0; i< this.listProduct.length;i++) {
-      if (parseInt(id) === this.listProduct[i].id){
-          this.listProduct.splice(i,1)
-      }
-    }
+    return this.httpClient.delete("http://localhost:3000/product/"+id);
+
   }
 
   updateProduct(product : Iproduct){
-     for (let i=0;i<this.listProduct.length;i++){
-       if(product.id === this.listProduct[i].id){
-         this.listProduct[i]= product
-       }
-     }
+     return this.httpClient.patch("http://localhost:3000/product/" + product.id , product)
   }
 }

@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Iproduct} from "../../interface/iproduct";
 import {ProductService} from "../service/product.service";
 import {ActivatedRoute, ParamMap} from "@angular/router";
+import {normalizeExtraEntryPoints} from "@angular-devkit/build-angular/src/angular-cli-files/models/webpack-configs";
 
 @Component({
   selector: 'app-details-product',
@@ -14,9 +15,9 @@ export class DetailsProductComponent implements OnInit {
   constructor(private product: ProductService, private active: ActivatedRoute) {
     this.active.paramMap.subscribe((param: ParamMap) => {
       const id = param.get('id')
-      // @ts-ignore
-      console.log(id)
-      this.product1 = this.product.findProductById(id);
+       this.product.findProductById(id).subscribe(data=>{
+         this.product1= data;
+       });
       console.log(this.product1)
     })
   }

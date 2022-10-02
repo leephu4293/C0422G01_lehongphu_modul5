@@ -1,0 +1,16 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "cocacola",
+      "price": "50000",
+      "note": "eqwe213123"
+    },
+    {
+      "id": "2",
+      "name": "2131231",
+      "price": "1200000",
+      "note": "uytghhjghj"
+    }
+  ]
+}
