@@ -9,6 +9,7 @@ import { DeleteProductComponent } from './delete-product/delete-product.componen
 import {ReactiveFormsModule} from "@angular/forms";
 import { DetailsProductComponent } from './details-product/details-product.component';
 import {HttpClientModule} from "@angular/common/http";
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {HttpClientModule} from "@angular/common/http";
     UpdateProductComponent,
     ListProductComponent,
     DeleteProductComponent,
-    DetailsProductComponent
+    DetailsProductComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
