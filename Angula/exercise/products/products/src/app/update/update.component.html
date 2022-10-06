@@ -1,0 +1,10 @@
+<form *ngIf="formUpdate" [formGroup]="formUpdate" (ngSubmit)="onSubmit()" >
+  <input class="form-control" formControlName="name" placeholder="name">
+  <input class="form-control" hidden formControlName="id" placeholder="name">
+  <input class="form-control" formControlName="price" placeholder="price">
+  <input class="form-control" formControlName="note" placeholder="note">
+  <select formControlName="category" class="form-select">
+    <option *ngFor="let list of categoryUp" [ngValue]="list">{{list.name}}</option>
+  </select>
+  <button type="submit">submit</button>
+</form>

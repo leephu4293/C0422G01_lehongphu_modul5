@@ -1,0 +1,85 @@
+
+
+<div class="row">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8">
+     <table class="table table-hover">
+       <thead>
+          <tr>
+            <th>STT</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Note</th>
+            <th>Category</th>
+            <th>Details</th>
+            <th>Delete</th>
+            <th>Update</th>
+          </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let list of listProduct index as i">
+            <td>{{i+1}}</td>
+            <td>{{list.name}}</td>
+            <td>{{list.price}}</td>
+            <td>{{list.note}}</td>
+            <td>{{list.category.name}}</td>
+            <td><a class="btn btn-success" [routerLink]="['details', list.id]" >Details</a></td>
+            <td><a class="btn-danger btn">Delete</a></td>
+            <td><a class="btn btn-dark" [routerLink]="['update', list.id]">Update</a></td>
+         </tr>
+       </tbody>
+     </table>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

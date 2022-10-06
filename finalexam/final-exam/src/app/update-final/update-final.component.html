@@ -1,0 +1,100 @@
+<div class="row container-fluid">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6 mt-5">
+
+    <form class="p-4" style="box-shadow: 2px 2px 5px #EDDAF2;
+    background: linear-gradient(to right, #D9F5D7, #EAF5D7)"
+       [formGroup]="formUpdate" *ngIf="formUpdate" (ngSubmit)="onSubmitUpdate()">
+
+      <h2 style="font-size: 24px;color: #cbbe73;line-height:
+      36px;text-align: center;font-family:Times New Roman Serif;
+      font-weight:700;font-style:normal" class="text-center p-2">UPDATE FORM</h2>
+       <input hidden formControlName="id">
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1"  class="form-label">carNumber</label>
+        <input type="text" formControlName="carNumber" readonly class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail2" class="form-label">typeCar</label>
+        <input type="text" formControlName="typeCar" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+      </div>
+      <div *ngIf="formUpdate.controls.typeCar.hasError('required')">
+          <p class="text-danger">not Empty</p>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail3" class="form-label">nameCar</label>
+        <input type="text" formControlName="nameCar" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp">
+      </div>
+      <div *ngIf="formUpdate.controls.nameCar.hasError('required')">
+        <p class="text-danger">not Empty</p>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Go</label>
+        <select class="form-select" formControlName="starGo">
+           <option *ngFor="let l of locationCar" value="{{l.id}}}">{{l.name}}</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Come</label>
+        <select class="form-select" formControlName="endCome">
+          <option *ngFor="let l of locationCar" value="{{l.id}}}">{{l.name}}</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail4" class="form-label">Phone</label>
+        <input type="text" formControlName="phone" class="form-control" id="exampleInputEmail4" aria-describedby="emailHelp">
+      </div>
+      <div *ngIf="formUpdate.controls.phone.hasError('required')">
+        <p class="text-danger">not Empty</p>
+      </div>
+      <div *ngIf="formUpdate.controls.phone.hasError('pattern')">
+        <p class="text-danger">From like : 090,093,097 and have 10 number</p>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail5" class="form-label">Email</label>
+        <input type="text" formControlName="email" class="form-control" id="exampleInputEmail5" aria-describedby="emailHelp">
+      </div>
+      <div *ngIf="formUpdate.controls.email.hasError('required')">
+        <p class="text-danger">not Empty</p>
+      </div>
+      <div *ngIf="formUpdate.controls.email.hasError('email')">
+        <p class="text-danger">not Correct form : like xxxxx@xx.xxx</p>
+      </div>
+
+      <div class="mb-3">
+      <label for="exampleInputEmail6" class="form-label">TimeGoOut</label>
+      <input type="text" formControlName="timeGoOut" class="form-control" id="exampleInputEmail6" aria-describedby="emailHelp">
+       </div>
+      <div *ngIf="formUpdate.controls.timeGoOut.hasError('required')">
+        <p class="text-danger">not Empty</p>
+      </div>
+      <div *ngIf="formUpdate.controls.timeGoOut.hasError('pattern')">
+        <p class="text-danger"> Correct form  xx:xx</p>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail7" class="form-label">timeGoCome</label>
+        <input type="text" formControlName="timeGoCome" class="form-control" id="exampleInputEmail7" aria-describedby="emailHelp">
+      </div>
+      <div *ngIf="formUpdate.controls.timeGoCome.hasError('required')">
+        <p class="text-danger">not Empty</p>
+      </div>
+      <div *ngIf="formUpdate.controls.timeGoCome.hasError('pattern')">
+        <p class="text-danger"> Correct form  xx:xx</p>
+      </div>
+
+      <div class="text-center">
+        <button routerLink="" class="btn btn-outline-success">Back</button>
+        <button type="submit" [disabled]="!formUpdate.valid" class="btn btn-outline-success">Submit</button>
+      </div>
+    </form>
+  </div>
+  <div class="col-lg-3"></div>
+</div>

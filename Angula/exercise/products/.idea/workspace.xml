@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="95c9fb25-a855-403c-8708-1ab04b1961f5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/create-product/create-product.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/create-product/create-product.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/create-product/create-product.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/create-product/create-product.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/data/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/delete-product/delete-product.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/delete-product/delete-product.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/delete-product/delete-product.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/delete-product/delete-product.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/details-product/details-product.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/details-product/details-product.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/details-product/details-product.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/details-product/details-product.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/list-product/list-product.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/list-product/list-product.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/list-product/list-product.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/list-product/list-product.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/service/product.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/service/product.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/todo/todo.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/todo/todo.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/todo/todo.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/todo/todo.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/todo/todo.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/todo/toro/service.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/todo/toro/service.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/update-product/update-product.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/update-product/update-product.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/update-product/update-product.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/app/update-product/update-product.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/interface/iproduct.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../New Text Document.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case/furama/case-module5/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/furama/case-module5/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case/furama/case-module5/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/furama/case-module5/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/create-customer/create-customer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/create-customer/create-customer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/create-customer/create-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/create-customer/create-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/create-customer/create-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/create-customer/create-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/customer-list/customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/customer-list/customer-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/customer-list/customer-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/customer-list/customer-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/furama/case-module5/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case/furama/case-module5/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/furama/case-module5/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case/furama/case-module5/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/fibonaci/test.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2FfhXlugflsTUQ7qnSN7U8EVrW3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ts.external.directory.path" value="D:\CODEGYM\C0422G01_lehongphu_modul5\Angula\exercise\products\products\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CODEGYM\C0422G01_lehongphu_modul5\Angula\exercise\products\products\src\model" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95c9fb25-a855-403c-8708-1ab04b1961f5" name="Default Changelist" comment="" />
+      <created>1664889087889</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664889087889</updated>
+      <workItem from="1664889089229" duration="5028000" />
+      <workItem from="1664894299912" duration="3971000" />
+      <workItem from="1664901829481" duration="414000" />
+      <workItem from="1664936220148" duration="1091000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="524" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1664894450932">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="524" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1664894450932" />
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1664901166516">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1664901166516" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/products/src/app/update/update.component.ts</url>
+          <line>44</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

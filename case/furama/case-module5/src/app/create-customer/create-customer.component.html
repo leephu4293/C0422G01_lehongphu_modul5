@@ -2,58 +2,60 @@
 <div class="row container-fluid">
   <div class="col-lg-3"></div>
   <div class="col-lg-6">
-    <form class="border p-4 mt-2 mb-2" style="box-shadow: 2px 2px 5px #EDDAF2;background: linear-gradient(to right, #D9F5D7, #EAF5D7); border-radius: 10px ">
-      <h2  class="text-center" style="font-size: 24px;color:
+    <form class="border p-4 mt-2 mb-2" style="box-shadow: 2px 2px 5px #EDDAF2;
+    background: linear-gradient(to right, #D9F5D7, #EAF5D7); border-radius: 10px "
+    [formGroup]="createForm" (ngSubmit)="onsubmit()" >
+      <h2 class="text-center" style="font-size: 24px;color:
             #cbbe73;line-height: 36px;text-align: center;
             font-family:Times New Roman Serif;
-            font-weight:700;font-style:normal;margin-top: 20px" >MAU DANG KY </h2>
+            font-weight:700;font-style:normal;margin-top: 20px"
+            >MAU DANG KY </h2>
       <div class="form-detail">
         <div class="form-info col-md-6 col-xs-12">
           <div class="group">
-            <input class="control-custom" placeholder="Full name" type="text"/>
+            <input class="control-custom"  formControlName="name" placeholder="Full name" type="text"/>
             <span class="bar"></span>
           </div>
           <div class="group">
-            <input class="control-custom" placeholder="email" type="text"/>
+            <input class="control-custom" formControlName="email" placeholder="email" type="text"/>
             <span class="bar"></span>
-
           </div>
 
           <div class="group">
-            <input class="control-custom" placeholder="phone" type="text"/>
+            <input class="control-custom" formControlName="phone" placeholder="phone" type="text"/>
             <span class="bar"></span>
-
           </div>
-          <div class="group">
-            <select class="control-custom form-select">
-              <option>Nam</option>
-              <option>Nu</option>
+
+          <div class="group" >
+            <select  formControlName="gender" class="form-select control-custom" >
+              <option value="true">Nam</option>
+              <option value="false">Nu</option>
             </select>
           </div>
         </div>
+
         <div class="form-info col-md-6 col-xs-12">
           <div class="group">
-            <input class="control-custom" placeholder="Id" type="text"/>
+            <input class="control-custom" formControlName="idCard" placeholder="IdCard" type="text"/>
+            <span class="bar"></span>
+          </div>
+          <div class="group">
+            <input class="control-custom" formControlName="address" placeholder="address" type="text"/>
             <span class="bar"></span>
 
           </div>
           <div class="group">
-            <input class="control-custom" placeholder="address" type="text"/>
+            <input class="control-custom" formControlName="dayOfBirth" placeholder="DayOfBirth" type="text"/>
             <span class="bar"></span>
 
           </div>
-          <div class="group">
-            <input class="control-custom" placeholder="DayOfBirth" type="text"/>
-            <span class="bar"></span>
-
+          <div class="group" >
+            <select class="form-select control-custom" formControlName="typeCustomer" >
+              <option *ngFor="let c of list" [ngValue]="c" >{{c.name}}</option>
+            </select>
           </div>
-          <div class="group">
-            <input class="control-custom" type="text"/>
-            <span class="bar"></span>
-            <label>DayOfBirth</label>
-          </div>
-
         </div>
+
       </div>
       <div class="form-button text-center">
         <button class="btn btn-outline-success" type="submit">Submit</button>

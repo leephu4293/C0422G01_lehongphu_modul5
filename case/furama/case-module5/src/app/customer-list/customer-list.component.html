@@ -1,32 +1,94 @@
-<div class="row">
-   <div class="col-2"></div>
-   <div class="col-8">
-      <table class="table table-bordered">
-        <thead>
-         <tr>
-           <th>STT</th>
-           <th>Ten</th>
-           <th>Gioi Tinh</th>
-           <th>Loai Khach</th>
-           <th>CMND</th>
-           <th>Sua</th>
-           <th>Xoa</th>
-         </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>1</td>
-          <td>Long</td>
-          <td>nam</td>
-          <td>bac</td>
-          <td>123131</td>
-          <td></td>
-          <td></td>
-        </tr>
-        </tbody>
-      </table>
-   </div>
-   <div class="col-2"></div>
+
+
+<div class="row mt-3 mb-3">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8">
+    <form [formGroup]="searchForm" *ngIf="searchForm" (ngSubmit)="searchCustomer()" >
+      <div class="row">
+        <div class="col-lg-4">
+          <input type="text" class="form-control" formControlName="name" placeholder="name">
+        </div>
+        <div class="col-lg-4">
+          <select  class="form-select" formControlName="customerType">
+            <option value="0">type</option>
+            <option *ngFor="let list of listType" value="{{list.id}}">{{list.name}}</option>
+          </select>
+        </div>
+        <div class="col-lg-4">
+          <button type="submit" class="btn-danger">submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-lg-2"></div>
 </div>
 
 
+
+
+<div class="row">
+
+   <div class="col-lg-2"></div>
+
+   <div class="col-lg-6">
+      <table class="table table-hover">
+        <thead>
+           <tr>
+             <th>STT</th>
+             <th>Ten</th>
+             <th>Loai Khach</th>
+             <th>Ngay sinh</th>
+             <th>Gioi Tinh</th>
+             <th>CMND</th>
+             <th>So dien thoai</th>
+             <th>Email</th>
+             <th>Dia chi</th>
+             <th>Sua</th>
+             <th>Xoa</th>
+           </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let customer of display | paginate: { itemsPerPage: 2, currentPage: p } index as i ">
+            <td>{{i+1}}</td>
+            <td>{{customer.name}}</td>
+            <td>{{customer.typeCustomer.name}}</td>
+            <td>{{customer.dayOfBirth}}</td>
+            <td *ngIf="customer.gender == 'true'">Nam</td>
+            <td *ngIf="customer.gender != 'true'">Nu</td>
+            <td>{{customer.idCard}}</td>
+            <td>{{customer.phone}}</td>
+            <td>{{customer.email}}</td>
+            <td>{{customer.address}}</td>
+            <td><a class="btn btn-success" [routerLink]="['/customer-update/',customer.id]">Sua</a></td>
+            <td><a class="btn btn-success"
+                   data-bs-toggle="modal"
+                   data-bs-target="#exampleModal" (click)="modalInfo(customer)" >Xoa</a></td>
+          </tr>
+        </tbody>
+      </table>
+   </div>
+</div>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Name: {{infoModal.name}}</p>
+        <p>Gender: {{infoModal.gender}}</p>
+        <p>Day: {{infoModal.dayOfBirth}}</p>
+        <span class="text-danger">ARE YOU SURE</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="deleteModal(infoModal.id)">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>

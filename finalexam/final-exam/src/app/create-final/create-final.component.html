@@ -1,0 +1,63 @@
+
+<div class="row container-fluid">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6 mt-5">
+
+     <form class="p-4" style="box-shadow: 2px 2px 5px #EDDAF2;
+    background: linear-gradient(to right, #D9F5D7, #EAF5D7)"
+     [formGroup]="formCreate"  *ngIf="formCreate" (ngSubmit)="onSubmit()">
+
+        <h2 style="font-size: 24px;color: #cbbe73;line-height:
+      36px;text-align: center;font-family:Times New Roman Serif;
+      font-weight:700;font-style:normal" class="text-center p-2">CREATE FORM</h2>
+
+       <div class="mb-3">
+         <label for="exampleInputEmail1" class="form-label">carNumber</label>
+         <input type="text" class="form-control" formControlName="carNumber" id="exampleInputEmail1" aria-describedby="emailHelp">
+       </div>
+       <div class="mb-3">
+         <label for="exampleInputEmail2" class="form-label">typeCar</label>
+         <input type="text" class="form-control" formControlName="typeCar" id="exampleInputEmail2" aria-describedby="emailHelp">
+       </div>
+       <div class="mb-3">
+         <label for="exampleInputEmail3" class="form-label">nameCar</label>
+         <input type="text" class="form-control" formControlName="nameCar" id="exampleInputEmail3" aria-describedby="emailHelp">
+       </div>
+
+       <div class="mb-3">
+         <label for="exampleInputEmail4" class="form-label">phone</label>
+         <input type="text" class="form-control" formControlName="phone" id="exampleInputEmail4" aria-describedby="emailHelp">
+       </div>
+
+       <div class="mb-3">
+         <label for="exampleInputEmail5" class="form-label">email</label>
+         <input type="text" class="form-control" formControlName="email" id="exampleInputEmail5" aria-describedby="emailHelp">
+       </div>
+
+       <div class="mb-3">
+         <label for="exampleInputEmail6" class="form-label">timeGoOut</label>
+         <input type="text" class="form-control" formControlName="timeGoOut" id="exampleInputEmail6" aria-describedby="emailHelp">
+       </div>
+       <div class="mb-3">
+         <label for="exampleInputEmail7" class="form-label">timeGoCome</label>
+         <input type="text" class="form-control" formControlName="timeGoCome" id="exampleInputEmail7" aria-describedby="emailHelp">
+       </div>
+       <div class="mb-3">
+         <label class="form-label" >starGo</label>
+         <select class="form-select" formControlName="starGo">
+           <option *ngFor="let list of listLoca" [ngValue]="list" >{{list.name}}</option>
+         </select>
+       </div>
+       <div class="mb-3">
+         <label class="form-label">endCome</label>
+         <select class="form-select" formControlName="endCome">
+           <option *ngFor="let list of listLoca" [ngValue]="list" >{{list.name}}</option>
+         </select>
+       </div>
+       <div class="text-center">
+          <button type="submit" class="btn btn-outline-success">Submit</button>
+       </div>
+     </form>
+  </div>
+  <div class="col-lg-3"></div>
+</div>

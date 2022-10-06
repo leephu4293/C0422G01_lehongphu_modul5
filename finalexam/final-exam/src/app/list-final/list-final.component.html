@@ -1,0 +1,67 @@
+<div class="row mt-5">
+   <div class="col-lg-2"></div>
+   <div class="col-lg-8">
+       <h2 class="text-center" style="font-size: 24px;color: #cbbe73;line-height:
+      36px;text-align: center;font-family:Times New Roman Serif;
+      font-weight:700;font-style:normal">INFORMATION LIST</h2>
+     <table class="table table-hover">
+       <thead>
+       <tr>
+         <th>#</th>
+         <th>CarNumber</th>
+         <th>TypeCar</th>
+         <th>NameCar</th>
+         <th>Go</th>
+         <th>Come</th>
+         <th>Phone</th>
+         <th>Email</th>
+         <th>TimeGo</th>
+         <th>TimeCome</th>
+         <th colspan="2" class="text-center">Action</th>
+       </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let list of listFinal index as i">
+            <td>{{i+1}}</td>
+            <td>{{list.carNumber}}</td>
+            <td>{{list.typeCar}}</td>
+            <td>{{list.nameCar}}</td>
+            <td>{{list.starGo.name}}</td>
+            <td>{{list.endCome.name}}</td>
+            <td>{{list.phone}}</td>
+            <td>{{list.email}}</td>
+            <td>{{list.timeGoOut}}</td>
+            <td>{{list.timeGoCome}}</td>
+            <td><a class="btn btn-warning" [routerLink]="['update',list.id]">Update</a></td>
+            <td><a class="btn btn-danger"
+                   data-bs-toggle="modal"
+                   data-bs-target="#exampleModal" (click)="modalTakeInfo(list)">Delete</a></td>
+
+         </tr>
+       </tbody>
+     </table>
+   </div>
+   <div class="col-lg-2"></div>
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">CAR INFO</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Car Number: {{modalInfo.carNumber}}</p>
+        <p>Car Name: {{modalInfo.nameCar}}</p>
+        <span class="text-danger">ARE YOU SURE DELETE</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="deleteModal(modalInfo.id)">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>

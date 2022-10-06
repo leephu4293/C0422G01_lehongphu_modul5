@@ -1,0 +1,28 @@
+{
+  "car": [
+    {
+      "id": 3,
+      "carNumber": "2311",
+      "typeCar": "seatChair",
+      "nameCar": "Phuong Linh",
+      "phone": "0935845632",
+      "email": "xxxxx@gmail.com",
+      "timeGoOut": "13:00",
+      "timeGoCome": "15:00",
+      "starGo": "Hue",
+      "endCome": "Tp.HCM"
+    },
+    {
+      "id": 5,
+      "carNumber": "2311",
+      "typeCar": "seatChair",
+      "nameCar": "Phuong Linh2",
+      "phone": "0935845632",
+      "email": "xxxxx@gmail.com",
+      "timeGoOut": "13:00",
+      "timeGoCome": "15:00",
+      "starGo": "Da Nang",
+      "endCome": "Quang Tri"
+    }
+  ]
+}

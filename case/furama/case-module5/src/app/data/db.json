@@ -1,0 +1,74 @@
+{
+  "customer": [
+    {
+      "id": 2,
+      "name": "Customer2",
+      "dayOfBirth": "12/12/1992",
+      "gender": "true",
+      "idCard": "012345678",
+      "phone": "0905123456",
+      "email": "customer1xxxx.@gmail.com",
+      "address": "xxx DN",
+      "typeCustomer": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Customer3",
+      "dayOfBirth": "02/12/1998",
+      "gender": "false",
+      "idCard": "122132131",
+      "phone": "0909456789",
+      "email": "Customer3@gmail.com",
+      "address": "GBxxxx",
+      "typeCustomer": {
+        "id": 3,
+        "name": "Gold"
+      }
+    },
+    {
+      "name": "Phujyhgjyghjg",
+      "dayOfBirth": "12/12/1212",
+      "gender": "false",
+      "idCard": "21323133131313",
+      "phone": "1231321313",
+      "email": "213132@123213",
+      "address": "313weqwewqe",
+      "typeCustomer": {
+        "id": "1",
+        "name": "Diamond"
+      },
+      "id": 4
+    },
+    {
+      "name": "Nguyen qweqeqwead",
+      "dayOfBirth": "12/12/121212",
+      "gender": "true",
+      "idCard": "123131333",
+      "phone": "1231321313",
+      "email": "213132@123213",
+      "address": "ewqsdasadwqeqwe",
+      "typeCustomer": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "id": 5
+    }
+  ],
+  "typeCustomer": [
+    {
+      "id": "1",
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinum"
+    },
+    {
+      "id": "3",
+      "name": "Gold"
+    }
+  ]
+}

@@ -21,6 +21,14 @@
   position: relative;
 }
 
+ #forcus label{
+  z-index: 1000;
+}
+
+#forcus label:focus{
+  color: red;
+}
+
 
 .form-detail input  {
   display: block;

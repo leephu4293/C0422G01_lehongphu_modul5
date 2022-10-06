@@ -1,0 +1,67 @@
+
+<div class="row container-fluid">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6">
+    <form *ngIf="updateFrom" class="border p-4 mt-2 mb-2" style="box-shadow: 2px 2px 5px #EDDAF2;background: linear-gradient(to right, #D9F5D7, #EAF5D7); border-radius: 10px "
+        [formGroup]="updateFrom" (ngSubmit)="onUpdate()">
+      <h2 class="text-center" style="font-size: 24px;color:
+            #cbbe73;line-height: 36px;text-align: center;
+            font-family:Times New Roman Serif;
+            font-weight:700;font-style:normal;margin-top: 20px"
+      >SUA THONG TIN </h2>
+      <div class="form-detail">
+        <div class="form-info col-md-6 col-xs-12">
+          <div class="group">
+            <input class="control-custom"  formControlName="name" placeholder="Full name" type="text"/>
+            <input class="control-custom"  hidden formControlName="id" placeholder="Full name" type="text"/>
+            <span class="bar"></span>
+          </div>
+          <div class="group">
+            <input class="control-custom" formControlName="email" placeholder="email" type="text"/>
+            <span class="bar"></span>
+          </div>
+
+          <div class="group">
+            <input class="control-custom" formControlName="phone" placeholder="phone" type="text"/>
+            <span class="bar"></span>
+          </div>
+
+          <div class="group" >
+            <select  formControlName="gender" class="form-select control-custom" >
+              <option value="true">Nam</option>
+              <option value="false">Nu</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-info col-md-6 col-xs-12">
+          <div class="group">
+            <input class="control-custom" formControlName="idCard" placeholder="IdCard" type="text"/>
+            <span class="bar"></span>
+          </div>
+          <div class="group">
+            <input class="control-custom" formControlName="address" placeholder="address" type="text"/>
+            <span class="bar"></span>
+
+          </div>
+          <div class="group">
+            <input class="control-custom" formControlName="dayOfBirth" placeholder="DayOfBirth" type="text"/>
+            <span class="bar"></span>
+
+          </div>
+          <div class="group" >
+            <select class="form-select control-custom" formControlName="typeCustomer" >
+              <option *ngFor="let c of typeCus" [ngValue]="c.id">{{c.name}}</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+      <div class="form-button text-center">
+        <button class="btn btn-outline-success" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  <div class="col-lg-3"></div>
+</div>
+

@@ -1,0 +1,45 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "promax",
+      "price": "20000000",
+      "note": "samsung",
+      "category": 2
+    },
+    {
+      "id": 2,
+      "name": "SAM1",
+      "price": "4000",
+      "note": "samsungA10",
+      "category": {
+        "id": 2,
+        "name": "IOS"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Iphone",
+      "price": "4000",
+      "note": "Iphone",
+      "category": {
+        "id": 2,
+        "name": "IOS"
+      }
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "AD"
+    },
+    {
+      "id": 2,
+      "name": "IOS"
+    },
+    {
+      "id": 3,
+      "name": "Other"
+    }
+  ]
+}
